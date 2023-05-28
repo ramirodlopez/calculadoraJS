@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(43, 43, 43);
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    background-color: rgb(33, 54, 75);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: rgb(43, 43, 43);
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+}
+
+.btn {
+    background-color: rgb(53, 87, 123);
+    color: white;
+    border:0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: .5rem;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    color: rgb(43, 43, 43);
+    background-color: white;
+    font-weight: .5rem;
+    font-size: 2rem;
+}
+
+#igual:hover{
+    color: white;
+    background-color: rgb(43, 43, 43);
+}
